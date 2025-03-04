@@ -1,0 +1,52 @@
+Prefix: : <http://www.semanticweb.org/mstap/ontologies/2025/2/untitled-ontology-45/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/mstap/ontologies/2025/2/untitled-ontology-45>
+
+Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
+
+Annotations: 
+    rdfs:comment "description tbd"
+
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: rdfs:label
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+Datatype: xsd:string
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
+
+    Annotations: 
+        rdfs:label "model"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
+
+    Annotations: 
+        rdfs:label "uncertainty"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000019>
+    
+    
+Class: <http://purl.obolibrary.org/obo/BFO_0000019>
+
+    
+Class: <http://purl.obolibrary.org/obo/BFO_0000031>
+
+    

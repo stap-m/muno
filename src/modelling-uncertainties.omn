@@ -30,7 +30,7 @@ Datatype: xsd:string
 ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01023>
 
     Annotations: 
-        rdfs:label "has role (ERSETZEN)"@de
+        rdfs:label "has role (ERSETZEN)"@en
     
     SubPropertyOf: 
         owl:topObjectProperty
@@ -64,7 +64,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01024>
 
     Annotations: 
-        rdfs:label "model role"@de
+        rdfs:label "model role"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000023>
@@ -73,7 +73,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01024>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
 
     Annotations: 
-        rdfs:label "model component role"@de
+        rdfs:label "model component role"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000023>
@@ -82,7 +82,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
 
     Annotations: 
-        rdfs:label "location of uncertainty role"@de
+        rdfs:label "location of uncertainty role"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000023>
@@ -91,7 +91,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01027>
 
     Annotations: 
-        rdfs:label "information content entity (ERSETZEN)"@de
+        rdfs:label "information content entity (ERSETZEN)"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>
@@ -100,7 +100,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01027>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
 
     Annotations: 
-        rdfs:label "data"@de
+        rdfs:label "data"@en
     
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/MUNO_01027>
@@ -109,7 +109,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01029>
 
     Annotations: 
-        rdfs:label "model input data"@de
+        rdfs:label "model input data"@en
     
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
@@ -118,7 +118,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01029>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01030>
 
     Annotations: 
-        rdfs:label "processed modell output data"@de
+        rdfs:label "processed modell output data"@en
     
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
@@ -127,7 +127,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01030>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01031>
 
     Annotations: 
-        rdfs:label "endogenous modelling parameter"@de
+        rdfs:label "endogenous modelling parameter"@en
     
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/MUNO_01027>,
@@ -137,7 +137,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01031>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01032>
 
     Annotations: 
-        rdfs:label "exogenous modelling parameter"@de
+        rdfs:label "exogenous modelling parameter"@en
     
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/MUNO_01027>,
@@ -147,7 +147,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01032>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01033>
 
     Annotations: 
-        rdfs:label "model system boundary"@de
+        rdfs:label "model system boundary"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
@@ -157,7 +157,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01033>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01034>
 
     Annotations: 
-        rdfs:label "model implementation"@de
+        rdfs:label "model implementation"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
@@ -167,7 +167,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01034>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01035>
 
     Annotations: 
-        rdfs:label "model structure"@de
+        rdfs:label "model structure"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
@@ -177,7 +177,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01035>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01036>
 
     Annotations: 
-        rdfs:label "conceptual model"@de
+        rdfs:label "conceptual model"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
@@ -188,7 +188,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01036>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01037>
 
     Annotations: 
-        rdfs:label "computer model"@de
+        rdfs:label "computer model"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
@@ -198,7 +198,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01037>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01038>
 
     Annotations: 
-        rdfs:label "model component"@de
+        rdfs:label "model component"@en
     
     EquivalentTo: 
         <http://purl.obolibrary.org/obo/BFO_0000031>

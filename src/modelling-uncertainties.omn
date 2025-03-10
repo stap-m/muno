@@ -44,6 +44,10 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
     Annotations: 
         rdfs:label "model"@en
     
+    EquivalentTo: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>
+         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01024>)
+    
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>
     
@@ -82,6 +86,62 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000023>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01027>
+
+    Annotations: 
+        rdfs:label "information content entity (ERSETZEN)"@de
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
+
+    Annotations: 
+        rdfs:label "data"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01027>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01029>
+
+    Annotations: 
+        rdfs:label "model input data"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01030>
+
+    Annotations: 
+        rdfs:label "processed modell output data"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01031>
+
+    Annotations: 
+        rdfs:label "endogenous modelling parameter"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01027>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01032>
+
+    Annotations: 
+        rdfs:label "exogenous modelling parameter"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01027>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
     
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>

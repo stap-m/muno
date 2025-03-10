@@ -1,4 +1,5 @@
 Prefix: : <http://www.semanticweb.org/mstap/ontologies/2025/2/untitled-ontology-45/>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -26,6 +27,18 @@ Datatype: rdf:PlainLiteral
 Datatype: xsd:string
 
     
+ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01023>
+
+    Annotations: 
+        rdfs:label "has role (ERSETZEN)"@de
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: owl:topObjectProperty
+
+    
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
 
     Annotations: 
@@ -44,7 +57,37 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
         <http://purl.obolibrary.org/obo/BFO_0000019>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01024>
+
+    Annotations: 
+        rdfs:label "model role"@de
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000023>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
+
+    Annotations: 
+        rdfs:label "model component role"@de
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000023>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
+
+    Annotations: 
+        rdfs:label "location of uncertainty role"@de
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000023>
+    
+    
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>
+
+    
+Class: <http://purl.obolibrary.org/obo/BFO_0000023>
 
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000031>

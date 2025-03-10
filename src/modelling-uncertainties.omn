@@ -195,6 +195,19 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01037>
         <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01024>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01038>
+
+    Annotations: 
+        rdfs:label "model component"@de
+    
+    EquivalentTo: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>
+         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>)
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>
+    
+    
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>
 
     

@@ -144,6 +144,36 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01032>
         <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01033>
+
+    Annotations: 
+        rdfs:label "model system boundary"@de
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01034>
+
+    Annotations: 
+        rdfs:label "model implementation"@de
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01035>
+
+    Annotations: 
+        rdfs:label "model structure"@de
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
+    
+    
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>
 
     

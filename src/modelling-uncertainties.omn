@@ -208,6 +208,42 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01038>
         <http://purl.obolibrary.org/obo/BFO_0000031>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01039>
+
+    Annotations: 
+        rdfs:label "epistemic uncertainty"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01040>
+
+    Annotations: 
+        rdfs:label "ontological uncertianty"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01041>
+
+    Annotations: 
+        rdfs:label "ambiguous uncertainty"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01042>
+
+    Annotations: 
+        rdfs:label "system (ERSETZEN)"@de
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000040>
+    
+    
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>
 
     
@@ -215,5 +251,8 @@ Class: <http://purl.obolibrary.org/obo/BFO_0000023>
 
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000031>
+
+    
+Class: <http://purl.obolibrary.org/obo/BFO_0000040>
 
     

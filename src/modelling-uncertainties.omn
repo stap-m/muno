@@ -15,6 +15,9 @@ Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
 Annotations: 
     rdfs:comment "description tbd"
 
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
+
+    
 AnnotationProperty: rdfs:comment
 
     
@@ -211,6 +214,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01038>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01039>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Epistemic uncertainty is an uncertainty of a system that exists due to an inherent variability within the system. It is caused by e.g. randomness by nature, human, social or cultural bahaviour or technological surprises.",
         rdfs:label "epistemic uncertainty"@de
     
     SubClassOf: 
@@ -220,6 +224,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01039>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01040>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Ontological uncertainty is an uncertainty of a system that exists due to an inherent variability within the system. It is caused by e.g. randomness by nature, human, social or cultural bahaviour or technological surprises.",
         rdfs:label "ontological uncertianty"@de
     
     SubClassOf: 
@@ -229,6 +234,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01040>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01041>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Ambiguous uncertainty is an uncertainty of a system due to the presence of various frames of reference about a phenomenon related to the system. It is caused by e.g. due to different perceptions, interpretations or values of stakeholders.",
         rdfs:label "ambiguous uncertainty"@de
     
     SubClassOf: 

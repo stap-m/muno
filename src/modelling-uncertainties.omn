@@ -147,9 +147,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Uncertainty is a quality of a system that represents any departure from the ideal of complete determinism about the systems behaviour.
-
-Uncertainty is a quality of a system that represents a situation of incomplete or inadequate information about the system and its behaviour.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Uncertainty is a quality of a system that represents any departure from the ideal of complete deterministic knowledge about a system and its behaviour.",
         rdfs:label "uncertainty"@en
     
     SubClassOf: 
@@ -171,8 +169,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
         rdfs:label "model component role"@en
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000023>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
+        <http://purl.obolibrary.org/obo/BFO_0000023>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
@@ -357,6 +354,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01042>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Level of model uncertainty is a quality of a model that represents the degree or severity of an uncertainty.",
         rdfs:label "level of uncertainty"@de
     
     SubClassOf: 
@@ -366,6 +364,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01049>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Shallow uncertainty is a level of uncertainty that allows to enumerate multiple alternatives and provide probabilities (subjective or objective).",
         rdfs:label "shallow uncertainty"@de
     
     SubClassOf: 
@@ -375,6 +374,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01049>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01050>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Medium uncertainty is a level of uncertainty that allows to enumerate multiple alternatives and rank order the alternatives in terms of perceived likelihood, without being able to number the likelihood.",
         rdfs:label "medium uncertainty"@de
     
     SubClassOf: 
@@ -384,6 +384,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01050>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01051>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Deep uncertainty is a level of uncertainty that allows to enumerate multiple alternatives without being able to rank order the alternatives in terms of how likely or plausible they are judged to be.",
         rdfs:label "deep uncertainty"@de
     
     SubClassOf: 
@@ -393,6 +394,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01051>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01052>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Recognized ignorance is a level of uncertainty that is so severe that one is unable to enumerate multiple alternatives, while admitting the possibility of being surprised.",
         rdfs:label "recognized ignorance"@de
     
     SubClassOf: 

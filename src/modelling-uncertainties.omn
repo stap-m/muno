@@ -80,6 +80,9 @@ ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01045>
     Domain: 
         <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
     
+    Range: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01054>
+    
     
 ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01046>
 
@@ -168,7 +171,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
         rdfs:label "model component role"@en
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000023>
+        <http://purl.obolibrary.org/obo/BFO_0000023>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
@@ -204,7 +208,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01029>
         rdfs:label "model input data"@en
     
     SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01030>
@@ -213,7 +218,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01030>
         rdfs:label "processed modell output data"@en
     
     SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01031>
@@ -223,7 +229,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01031>
     
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/MUNO_01027>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01032>
@@ -233,7 +240,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01032>
     
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/MUNO_01027>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01033>
@@ -243,7 +251,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01033>
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01034>
@@ -263,7 +272,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01035>
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01036>
@@ -274,7 +284,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01036>
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
         <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01024>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01037>
@@ -387,6 +398,22 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01052>
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
     
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01054>
+
+    Annotations: 
+        rdfs:label "location of uncertainty"@de
+    
+    EquivalentTo: 
+        <http://purl.obolibrary.org/obo/BFO_0000002>
+         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>)
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000002>
+    
+    
+Class: <http://purl.obolibrary.org/obo/BFO_0000002>
+
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>
 

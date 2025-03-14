@@ -30,6 +30,9 @@ AnnotationProperty: rdfs:label
 Datatype: rdf:PlainLiteral
 
     
+Datatype: xsd:float
+
+    
 Datatype: xsd:string
 
     
@@ -88,6 +91,25 @@ ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01047>
     
     
 ObjectProperty: owl:topObjectProperty
+
+    
+DataProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01053>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "",
+        rdfs:label "has shallow uncertainty value"@de
+    
+    Domain: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01049>
+    
+    Range: 
+        xsd:float[>= 0.0f , <= 1.0f]
+    
+    SubPropertyOf: 
+        owl:topDataProperty
+    
+    
+DataProperty: owl:topDataProperty
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
@@ -304,6 +326,51 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01042>
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000040>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
+
+    Annotations: 
+        rdfs:label "level of uncertainty"@de
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000019>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01049>
+
+    Annotations: 
+        rdfs:label "shallow uncertainty"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01050>
+
+    Annotations: 
+        rdfs:label "medium uncertainty"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01051>
+
+    Annotations: 
+        rdfs:label "deep uncertainty"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01052>
+
+    Annotations: 
+        rdfs:label "recognized ignorance"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
     
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>

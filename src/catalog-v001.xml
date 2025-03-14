@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1741941095822" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="import/bfo/bfo-extracted.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1741941095822" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="import/bfo/bfo-full-download.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1741941095822" name="http://www.semanticweb.org/mstap/ontologies/2025/2/untitled-ontology-45/" uri="muno_as_rdf.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1741941095822" name="https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/imports/ro/ro-extracted.owl" uri="import/ro/ro-extracted.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741961043549" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="import/bfo/bfo-extracted.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741961043549" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="import/bfo/bfo-full-download.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741961043549" name="https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/imports/ro/ro-extracted.owl" uri="import/ro/ro-extracted.owl"/>
     </group>
 </catalog>

@@ -53,6 +53,12 @@ ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01043>
     SubPropertyOf: 
         owl:topObjectProperty
     
+    Domain: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
+    
+    Range: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01042>
+    
     
 ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01044>
 
@@ -71,6 +77,9 @@ ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01045>
     SubPropertyOf: 
         owl:topObjectProperty
     
+    Domain: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
+    
     
 ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01046>
 
@@ -79,6 +88,12 @@ ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01046>
     
     SubPropertyOf: 
         owl:topObjectProperty
+    
+    Domain: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
+    
+    Range: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
     
     
 ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01047>

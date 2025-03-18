@@ -196,7 +196,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01027>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
 
     Annotations: 
-        rdfs:label "data"@en
+        rdfs:label "data item (ERSETZEN)"@en
     
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/MUNO_01027>
@@ -207,8 +207,11 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01029>
     Annotations: 
         rdfs:label "model input data"@en
     
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01056>
+         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01057>)
+    
     SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>,
         <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
@@ -217,8 +220,11 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01030>
     Annotations: 
         rdfs:label "processed modell output data"@en
     
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01056>
+         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01058>)
+    
     SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>,
         <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
@@ -228,7 +234,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01031>
         rdfs:label "endogenous modelling parameter"@en
     
     SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01027>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>,
         <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
         <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
@@ -239,7 +245,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01032>
         rdfs:label "exogenous modelling parameter"@en
     
     SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01027>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>,
         <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
         <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
@@ -411,14 +417,42 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01052>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01054>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model uncertainty location is a generically dependent continuant that has the role to be a location of uncertainty.",
         rdfs:label "location of uncertainty"@de
     
     EquivalentTo: 
-        <http://purl.obolibrary.org/obo/BFO_0000002>
+        <http://purl.obolibrary.org/obo/BFO_0000031>
          and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>)
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000002>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01056>
+
+    Annotations: 
+        rdfs:label "data set (ERSETZEN)"@de
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01057>
+
+    Annotations: 
+        rdfs:label "input data role"@de
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000023>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01058>
+
+    Annotations: 
+        rdfs:label "output data role"@de
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000023>
     
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000002>

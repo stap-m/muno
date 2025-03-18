@@ -21,6 +21,9 @@ AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000118>
 
     
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000600>
+
+    
 AnnotationProperty: rdfs:comment
 
     
@@ -244,6 +247,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01032>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01033>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A system boundary is a generically dependent continuant that represents the demarcation of aspects of the real world system that are included in the model from those that are not included.",
+        <http://purl.obolibrary.org/obo/IAO_0000600> "The system boundary is often determined by the problem to be solved by the model and the chosen framing. It is also sometimes referred to as 'context' or seen as part of the 'conceptual model'.",
         rdfs:label "model system boundary"@en
     
     SubClassOf: 
@@ -276,6 +281,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01035>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01036>
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A conceptual model is a generically dependent continuant that specifies variables and relationships inside the system boundaries to represent a system in a simplified way. It has the model role.",
+        <http://purl.obolibrary.org/obo/IAO_0000600> "The conceptual model can provide the interpretation of a computer model based on the conceptual model.",
         rdfs:label "conceptual model"@en
     
     SubClassOf: 

@@ -8,7 +8,7 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 
-Ontology: <http://www.semanticweb.org/mstap/ontologies/2025/2/untitled-ontology-45>
+Ontology: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/modelling-uncertainties.owl/>
 
 Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
 

@@ -45,10 +45,6 @@ PREFIX ro: <http://purl.obolibrary.org/obo/RO_>
     iao:is_about 'an output of the model with much uncertainty'.
 
 
-# TM I think we should assign some level_of_uncertainty to some output data of the model, and also some numeric uncertaitny
-# Also, we should add an axiom stating that the level_of_uncertainty of output data is somehow compatible to the level_of_uncertainty of the model
-
-
 # specify a model with a certain model calculation and a certain output
 :model_123 a muno:model.
 :output_123 a muno:output_data;

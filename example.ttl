@@ -1,0 +1,59 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX muno: <http://example.org/muno#>
+PREFIX iao: <http://purl.obolibrary.org/obo/IAO_>
+PREFIX ro: <http://purl.obolibrary.org/obo/RO_>
+
+:uncertainty01 a muno:epistemic_uncertainty; # nature of uncertainty
+    rdfs:label "uncertainty001";                                             
+    rdfs:comment "this uncertainty is about an explicit context"; 
+    ro:characteristic_of [
+            a muno:location_of_uncertainty;
+            a muno:input_data
+        ];
+    muno:has_level_of_uncertainty [
+         a muno:shallow_uncertainty
+        ]; 
+    ro:characteristic_of :model_123;
+    iao:is_about "reference to an entity in an external ontology or database".
+
+:uncertainty02 a muno:epistemic_uncertainty; # nature of uncertainty
+    rdfs:label "uncertainty002";                                             
+    rdfs:comment "this uncertainty is about some output data"; 
+    ro:characteristic_of [
+            a muno:location_of_uncertainty;
+            a muno:output_data
+        ];
+    muno:has_level_of_uncertainty [
+            a muno:shallow_uncertainty;
+            muno:has_shallow_uncertainty_value "0.1"^^xsd:decimal
+        ];
+    ro:characteristic_of :model_123;
+    ro:characteristic_of :output_123;
+    iao:is_about "an output of the model with limited uncertainty".
+
+:uncertainty03 a muno:epistemic_uncertainty; # nature of uncertainty
+    rdfs:label "uncertainty003";                                             
+    rdfs:comment "this uncertainty is about some output data"; 
+    muno:has_level_of_uncertainty [
+            a muno:deep_uncertainty
+        ]; 
+    ro:characteristic_of [
+            a muno:location_of_uncertainty;
+            a muno:output_data
+        ];
+    ro:characteristic_of :model_123;
+    iao:is_about 'an output of the model with much uncertainty'.
+
+
+# TM I think we should assign some level_of_uncertainty to some output data of the model, and also some numeric uncertaitny
+# Also, we should add an axiom stating that the level_of_uncertainty of output data is somehow compatible to the level_of_uncertainty of the model
+
+
+# specify a model with a certain model calculation and a certain output
+:model_123 a muno:model.
+:output_123 a muno:output_data;
+    muno:output_of [
+            a muno:model_calculation;
+            muno:has_participant :model_123
+        ].
+    

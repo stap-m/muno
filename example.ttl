@@ -2,6 +2,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX muno: <http://example.org/muno#>
 PREFIX iao: <http://purl.obolibrary.org/obo/IAO_>
 PREFIX ro: <http://purl.obolibrary.org/obo/RO_>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://example.org/>
 
 :uncertainty01 a muno:epistemic_uncertainty; # nature of uncertainty
     rdfs:label "uncertainty001";                                             

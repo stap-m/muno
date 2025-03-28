@@ -1,4 +1,4 @@
-Prefix: : <http://www.semanticweb.org/mstap/ontologies/2025/2/untitled-ontology-45/>
+Prefix: : <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-45/>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -10,8 +10,8 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 Ontology: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/modelling-uncertainties.owl/>
 
-Import: <http://openenergy-platform.org/ontology/oeo/dev/imports/iao-extracted.owl>
-Import: <http://openenergy-platform.org/ontology/oeo/dev/imports/ro-extracted.owl>
+Import: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/>
+Import: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/>
 Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
 
 Annotations: 

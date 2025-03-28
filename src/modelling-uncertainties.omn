@@ -111,6 +111,33 @@ ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01047>
         owl:topObjectProperty
     
     
+ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01060>
+
+    Annotations: 
+        rdfs:label "has participant (ERSETZEN)"@de
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01061>
+
+    Annotations: 
+        rdfs:label "has input (ERSETZEN)"@de
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01062>
+
+    Annotations: 
+        rdfs:label "has output (ERSETZEN)"@de
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
 ObjectProperty: owl:topObjectProperty
 
     
@@ -150,7 +177,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Uncertainty is a quality of a system that represents any departure from the ideal of complete deterministic knowledge about a system and its behaviour.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Uncertainty is a quality of a model of a system or of the model’s calculation’s output data that expresses any departure from the ideal of representing complete definite knowledge about the system. Definite knowledge of a system implies that one can predict its behaviour accurately under all circumstances for those aspects that are within the scope of the model.",
         rdfs:label "uncertainty"@en
     
     SubClassOf: 
@@ -205,7 +232,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01029>
 
     Annotations: 
-        rdfs:label "model input data"@en
+        rdfs:label "input data"@en
     
     EquivalentTo: 
         <http://openenergy-platform.org/ontology/oeo/MUNO_01056>
@@ -218,7 +245,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01029>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01030>
 
     Annotations: 
-        rdfs:label "processed modell output data"@en
+        rdfs:label "output data"@en
     
     EquivalentTo: 
         <http://openenergy-platform.org/ontology/oeo/MUNO_01056>
@@ -253,9 +280,10 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01032>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01033>
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A system boundary is a generically dependent continuant that represents the demarcation of aspects of the real world system that are included in the model from those that are not included.",
-        <http://purl.obolibrary.org/obo/IAO_0000600> "The system boundary is often determined by the problem to be solved by the model and the chosen framing. It is also sometimes referred to as 'context' or seen as part of the 'conceptual model'.",
-        rdfs:label "model system boundary"@en
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model scope is a generically dependent continuant that represents the demarcation of aspects of the real world system that are included in the model from those that are not included.",
+        <http://purl.obolibrary.org/obo/IAO_0000118> "model system boundary"@en,
+        <http://purl.obolibrary.org/obo/IAO_0000600> "The model scope is often determined by the problem to be solved by the model and the chosen framing. It is also sometimes referred to as 'context' or seen as part of the 'conceptual model'.",
+        rdfs:label "model scope"
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
@@ -325,7 +353,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01038>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01039>
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Epistemic uncertainty is an uncertainty about a system that exists due to imperfection of knowledge about the system. More knowledge about the system results in less epistemic uncertainty.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Epistemic uncertainty is an uncertainty of a model of a system that exists due to incomplete knowledge or incorrect beliefs about the system.",
         <http://purl.obolibrary.org/obo/IAO_0000118> "epistemological uncertainty",
         rdfs:label "epistemic uncertainty"@de
     
@@ -336,7 +364,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01039>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01040>
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Aleatory uncertainty is an uncertainty of a system that exists due to an inherent variability within the system. It is caused by e.g. randomness by nature, human, social or cultural bahaviour or technological surprises.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Aleatory uncertainty is an uncertainty of a model of a system that exists due to an inherent variability within the system. It is caused by e.g. randomness by nature, human, social or cultural behaviour or technological surprises.",
         <http://purl.obolibrary.org/obo/IAO_0000118> "ontic uncertainty",
         <http://purl.obolibrary.org/obo/IAO_0000118> "ontological uncertainty",
         rdfs:label "aleatory uncertianty"@de
@@ -348,7 +376,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01040>
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01041>
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Ambiguous uncertainty is an uncertainty of a system due to the presence of various frames of reference about a phenomenon related to the system. It is caused by e.g. due to different perceptions, interpretations or values of stakeholders.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Ambiguous uncertainty is an uncertainty of a model of a system due to the presence of various frames of reference about a phenomenon related to the system. It is caused by e.g. due to different perceptions, interpretations or values of stakeholders.",
         rdfs:label "ambiguous uncertainty"@de
     
     SubClassOf: 
@@ -455,7 +483,22 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01058>
         <http://purl.obolibrary.org/obo/BFO_0000023>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01059>
+
+    Annotations: 
+        rdfs:label "model calculation"@de
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000015>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01060> some <http://openenergy-platform.org/ontology/oeo/MUNO_01037>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01061> some <http://openenergy-platform.org/ontology/oeo/MUNO_01029>,
+        <http://openenergy-platform.org/ontology/oeo/MUNO_01062> some <http://openenergy-platform.org/ontology/oeo/MUNO_01030>
+    
+    
 Class: <http://purl.obolibrary.org/obo/BFO_0000002>
+
+    
+Class: <http://purl.obolibrary.org/obo/BFO_0000015>
 
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>

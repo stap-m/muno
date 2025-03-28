@@ -41,15 +41,6 @@ Datatype: xsd:float
 Datatype: xsd:string
 
     
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01023>
-
-    Annotations: 
-        rdfs:label "has role (ERSETZEN)"@en
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    
 ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01043>
 
     Annotations: 
@@ -63,15 +54,6 @@ ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01043>
     
     Range: 
         <http://purl.obolibrary.org/obo/RO_0002577>
-    
-    
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01044>
-
-    Annotations: 
-        rdfs:label "charachteristic of (ERSETZEN)"@de
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
     
     
 ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01045>
@@ -104,41 +86,8 @@ ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01046>
         <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
     
     
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01047>
+ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000050>
 
-    Annotations: 
-        rdfs:label "part of (ERSETZEN)"@de
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01060>
-
-    Annotations: 
-        rdfs:label "has participant (ERSETZEN)"@de
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01061>
-
-    Annotations: 
-        rdfs:label "has input (ERSETZEN)"@de
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01062>
-
-    Annotations: 
-        rdfs:label "has output (ERSETZEN)"@de
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
     
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000057>
 
@@ -181,7 +130,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
     
     EquivalentTo: 
         <http://purl.obolibrary.org/obo/BFO_0000031>
-         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01024>)
+         and (<http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01024>)
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
@@ -258,8 +207,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01031>
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/IAO_0000027>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01032>
@@ -269,8 +218,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01032>
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/IAO_0000027>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01033>
@@ -283,8 +232,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01033>
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01034>
@@ -294,7 +243,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01034>
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01035>
@@ -304,8 +253,8 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01035>
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01036>
@@ -317,9 +266,9 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01036>
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01024>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01024>,
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01037>
@@ -329,7 +278,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01037>
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01024>
+        <http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01024>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01038>
@@ -339,11 +288,11 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01038>
     
     EquivalentTo: 
         <http://purl.obolibrary.org/obo/BFO_0000031>
-         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>)
+         and (<http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>)
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01047> some <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01039>
@@ -437,7 +386,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01054>
     
     EquivalentTo: 
         <http://purl.obolibrary.org/obo/BFO_0000031>
-         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>)
+         and (<http://purl.obolibrary.org/obo/RO_0000087> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>)
     
     
 Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01057>

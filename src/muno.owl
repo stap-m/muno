@@ -1,0 +1,943 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-45/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-45/">
+    <Prefix name="" IRI="http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-45/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
+    <Import>http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/</Import>
+    <Import>http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>The Modelling Uncertainties Ontology (MUNO) is a BFO-based mid-level ontology for the annotation and description of modelling uncertainties in many domains. MUNO was built based on the uncertainty matrix by Walker et.al. (2003) and Kwakkel et.al. (2010).</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01025"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01026"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01029"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01031"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01032"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01033"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01034"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01035"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01036"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01037"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01038"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01039"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01040"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01041"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01048"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01049"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01050"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01051"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01052"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01054"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01057"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01058"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MUNO_01059"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002233"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002234"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002352"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002353"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="MUNO_01043"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="MUNO_01046"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MUNO_01053"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="rdf:PlainLiteral"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="MUNO_01001"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <Class IRI="MUNO_01024"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="MUNO_01029"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <Class IRI="MUNO_01057"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="MUNO_01030"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <Class IRI="MUNO_01058"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="MUNO_01038"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <Class IRI="MUNO_01025"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="MUNO_01054"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <Class IRI="MUNO_01026"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01001"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01001"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="MUNO_01043"/>
+            <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01002"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01002"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
+            <Class IRI="MUNO_01001"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01002"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
+            <Class IRI="MUNO_01054"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01024"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01024"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
+            <Class IRI="MUNO_01001"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01025"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01025"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
+            <Class IRI="MUNO_01038"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01026"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01026"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
+            <Class IRI="MUNO_01054"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01029"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01026"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01029"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002352"/>
+            <Class IRI="MUNO_01059"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01030"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01026"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01030"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002353"/>
+            <Class IRI="MUNO_01059"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01031"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01031"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01025"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01031"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01026"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01032"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01032"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01025"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01032"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01026"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01033"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01033"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01025"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01033"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01026"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01034"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01034"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01025"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01035"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01035"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01025"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01035"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01026"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01036"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01036"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01024"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01036"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01025"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01036"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01026"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01037"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01037"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+            <Class IRI="MUNO_01024"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01038"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01038"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="MUNO_01001"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01039"/>
+        <Class IRI="MUNO_01002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01040"/>
+        <Class IRI="MUNO_01002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01041"/>
+        <Class IRI="MUNO_01002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01048"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01048"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
+            <Class IRI="MUNO_01001"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01048"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
+            <Class IRI="MUNO_01054"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01049"/>
+        <Class IRI="MUNO_01048"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01050"/>
+        <Class IRI="MUNO_01048"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01051"/>
+        <Class IRI="MUNO_01048"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01052"/>
+        <Class IRI="MUNO_01048"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01057"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01057"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01058"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01058"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01059"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01059"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="MUNO_01037"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01059"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002233"/>
+            <Class IRI="MUNO_01029"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MUNO_01059"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002234"/>
+            <Class IRI="MUNO_01030"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="MUNO_01043"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="MUNO_01046"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="MUNO_01043"/>
+        <Class IRI="MUNO_01001"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="MUNO_01046"/>
+        <Class IRI="MUNO_01002"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="MUNO_01043"/>
+        <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="MUNO_01046"/>
+        <Class IRI="MUNO_01048"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MUNO_01053"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="MUNO_01053"/>
+        <Class IRI="MUNO_01049"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="MUNO_01053"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:float"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01001</IRI>
+        <Literal>A model is a generically  dependent continuant for representing (knowledge about) a system and its behaviours in a simplified or idealised way. It has the model role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01001</IRI>
+        <Literal xml:lang="en">model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01002</IRI>
+        <Literal>Uncertainty is a quality of a model of a system or of the model’s calculation’s output data that expresses any departure from the ideal of representing complete definite knowledge about the system. Definite knowledge of a system implies that one can predict its behaviour accurately under all circumstances for those aspects that are within the scope of the model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01002</IRI>
+        <Literal xml:lang="en">uncertainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01024</IRI>
+        <Literal>A model role is a a role of a generically  dependent continuant for representing (knowledge about) a system and its behaviours in a simplified or idealised way.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01024</IRI>
+        <Literal xml:lang="en">model role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01025</IRI>
+        <Literal>A model component role is the role of a generically dependent continuant that is part of a model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01025</IRI>
+        <Literal xml:lang="en">model component role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01026</IRI>
+        <Literal>Location of uncertainty role is a role of an entity in which a model uncertainty is located in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01026</IRI>
+        <Literal xml:lang="en">location of uncertainty role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01029</IRI>
+        <Literal>Input data is a data set that is used as input data in a model calculation. It has the input data role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01029</IRI>
+        <Literal xml:lang="en">input data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01030</IRI>
+        <Literal>Output data is a data set that is the output result of a model calculation. It has the output data role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01030</IRI>
+        <Literal xml:lang="en">output data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01031</IRI>
+        <Literal>An endogenous modelling parameter is a data item that is a fixed parameter inside a computer model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01031</IRI>
+        <Literal xml:lang="en">endogenous modelling parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01032</IRI>
+        <Literal>An exogenous modelling parameter is a data item that is used as input to the model but is defined outside the model (exogenous) and can be changed to reflect different external developments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01032</IRI>
+        <Literal xml:lang="en">exogenous modelling parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01033</IRI>
+        <Literal>A model scope is a generically dependent continuant that represents the demarcation of aspects of the real world system that are included in the model from those that are not included.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>MUNO_01033</IRI>
+        <Literal xml:lang="en">model system boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>MUNO_01033</IRI>
+        <Literal>The model scope is often determined by the problem to be solved by the model and the chosen framing. It is also sometimes referred to as &apos;system boundary&apos; or &apos;context&apos; or seen as part of the &apos;conceptual model&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01033</IRI>
+        <Literal>model scope</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01034</IRI>
+        <Literal>A technical model implementation is a generically dependent continuant that is the part of a computer model that refers to the applied hardware and software.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01034</IRI>
+        <Literal xml:lang="en">technical model implementation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01035</IRI>
+        <Literal>The model structure is a generically dependent continuant that is part of a computer model and represents generic design choices of the algorithms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01035</IRI>
+        <Literal xml:lang="en">model structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01036</IRI>
+        <Literal>A conceptual model is a generically dependent continuant that specifies variables and relationships inside the system boundaries to represent a system in a simplified way. It has the model role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <IRI>MUNO_01036</IRI>
+        <Literal>The conceptual model can provide the interpretation of a computer model based on the conceptual model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01036</IRI>
+        <Literal xml:lang="en">conceptual model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01037</IRI>
+        <Literal>A computer model is a generically dependent continuant that is the implementation of a conceptual model in computer code. It has the model role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01037</IRI>
+        <Literal xml:lang="en">computer model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01038</IRI>
+        <Literal>A model component is a generically dependent continuant that is part of a computer model. It has the model component role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01038</IRI>
+        <Literal xml:lang="en">model component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01039</IRI>
+        <Literal>Epistemic uncertainty is an uncertainty of a model of a system that exists due to incomplete knowledge or incorrect beliefs about the system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>MUNO_01039</IRI>
+        <Literal>epistemological uncertainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01039</IRI>
+        <Literal xml:lang="en">epistemic uncertainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01040</IRI>
+        <Literal>Aleatory uncertainty is an uncertainty of a model of a system that exists due to an inherent variability within the system. It is caused by e.g. randomness by nature, human, social or cultural behaviour or technological surprises.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>MUNO_01040</IRI>
+        <Literal>ontic uncertainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>MUNO_01040</IRI>
+        <Literal>ontological uncertainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01040</IRI>
+        <Literal xml:lang="en">aleatory uncertianty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01041</IRI>
+        <Literal>Ambiguous uncertainty is an uncertainty of a model of a system due to the presence of various frames of reference about a phenomenon related to the system. It is caused by e.g. due to different perceptions, interpretations or values of stakeholders.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01041</IRI>
+        <Literal xml:lang="en">ambiguous uncertainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01043</IRI>
+        <Literal>A relation between a model and a system where the model represents the system and its behaviours in a simplified or idealised way.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01043</IRI>
+        <Literal xml:lang="en">models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MUNO_01046</IRI>
+        <Literal>A relation between a (type of) uncertainty and a level of uncertainty where the level indicates the severity of the uncertainty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01046</IRI>
+        <Literal xml:lang="en">has uncertainty level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01048</IRI>
+        <Literal>Level of model uncertainty is a quality of a model that represents the degree or severity of an uncertainty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01048</IRI>
+        <Literal xml:lang="en">level of uncertainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01049</IRI>
+        <Literal>Shallow uncertainty is a level of uncertainty that allows to enumerate multiple alternatives and provide probabilities (subjective or objective).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01049</IRI>
+        <Literal xml:lang="en">shallow uncertainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01050</IRI>
+        <Literal>Medium uncertainty is a level of uncertainty that allows to enumerate multiple alternatives and rank order the alternatives in terms of perceived likelihood, without being able to number the likelihood.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01050</IRI>
+        <Literal xml:lang="en">medium uncertainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01051</IRI>
+        <Literal>Deep uncertainty is a level of uncertainty that allows to enumerate multiple alternatives without being able to rank order the alternatives in terms of how likely or plausible they are judged to be.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01051</IRI>
+        <Literal xml:lang="en">deep uncertainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01052</IRI>
+        <Literal>Recognized ignorance is a level of uncertainty that is so severe that one is unable to enumerate multiple alternatives, while admitting the possibility of being surprised.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01052</IRI>
+        <Literal xml:lang="en">recognized ignorance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01053</IRI>
+        <Literal>A data property to indicate a probability value in [0,1] to a shallow level of uncertainty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01053</IRI>
+        <Literal xml:lang="en">has shallow uncertainty value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01054</IRI>
+        <Literal>A model uncertainty location is a generically dependent continuant that has the role to be a location of uncertainty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01054</IRI>
+        <Literal xml:lang="en">location of uncertainty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01057</IRI>
+        <Literal>Input data role is the role of a data set that is used as input to a model calculation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01057</IRI>
+        <Literal xml:lang="en">input data role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01058</IRI>
+        <Literal>Output data role is the role of a data set that is the output result of a model calculation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01058</IRI>
+        <Literal xml:lang="en">output data role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>MUNO_01059</IRI>
+        <Literal>A model calculation is a process of solving mathematical equations of a model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MUNO_01059</IRI>
+        <Literal xml:lang="en">model calculation</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

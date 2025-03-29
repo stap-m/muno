@@ -1,4 +1,4 @@
-Prefix: : <http://www.semanticweb.org/mstap/ontologies/2025/2/untitled-ontology-45/>
+Prefix: : <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-45/>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -8,12 +8,14 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 
-Ontology: <http://www.semanticweb.org/mstap/ontologies/2025/2/untitled-ontology-45>
+Ontology: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-45/>
 
 Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
+Import: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/>
+Import: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/>
 
 Annotations: 
-    rdfs:comment "description tbd"
+    rdfs:comment "The Modelling Uncertainties Ontology (MUNO) is a BFO-based mid-level ontology for the annotation and description of modelling uncertainties in many domains. MUNO was built based on the uncertainty matrix by Walker et.al. (2003) and Kwakkel et.al. (2010)."
 
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
 
@@ -39,89 +41,73 @@ Datatype: xsd:float
 Datatype: xsd:string
 
     
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01023>
+ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000050>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000052>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000057>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000053>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002233>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002234>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002352>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002353>
+
+    
+ObjectProperty: MUNO_01043
 
     Annotations: 
-        rdfs:label "has role (ERSETZEN)"@en
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01043>
-
-    Annotations: 
-        rdfs:label "models"@de
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    Domain: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
-    
-    Range: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01042>
-    
-    
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01044>
-
-    Annotations: 
-        rdfs:label "charachteristic of (ERSETZEN)"@de
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01045>
-
-    Annotations: 
-        rdfs:label "has uncertainty location"@de
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a model and a system where the model represents the system and its behaviours in a simplified or idealised way.",
+        rdfs:label "models"@en
     
     SubPropertyOf: 
         owl:topObjectProperty
     
     Domain: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
+        MUNO_01001
     
     Range: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01054>
+        <http://purl.obolibrary.org/obo/RO_0002577>
     
     
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01046>
+ObjectProperty: MUNO_01046
 
     Annotations: 
-        rdfs:label "has uncertainty level"@de
+        rdfs:comment "A relation between a (type of) uncertainty and a level of uncertainty where the level indicates the severity of the uncertainty.",
+        rdfs:label "has uncertainty level"@en
     
     SubPropertyOf: 
         owl:topObjectProperty
     
     Domain: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
+        MUNO_01002
     
     Range: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
-    
-    
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01047>
-
-    Annotations: 
-        rdfs:label "part of (ERSETZEN)"@de
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
+        MUNO_01048
     
     
 ObjectProperty: owl:topObjectProperty
 
     
-DataProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01053>
+DataProperty: MUNO_01053
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A data property to indicate a probability value in [0,1] to a shallow level of uncertainty.",
-        rdfs:label "has shallow uncertainty value"@de
+        rdfs:label "has shallow uncertainty value"@en
     
     Domain: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01049>
+        MUNO_01049
     
     Range: 
         xsd:float[>= 0.0f , <= 1.0f]
@@ -133,329 +119,10 @@ DataProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01053>
 DataProperty: owl:topDataProperty
 
     
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
-
-    Annotations: 
-        rdfs:label "model"@en
-    
-    EquivalentTo: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>
-         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01024>)
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01043> some <http://openenergy-platform.org/ontology/oeo/MUNO_01042>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Uncertainty is a quality of a system that represents any departure from the ideal of complete deterministic knowledge about a system and its behaviour.",
-        rdfs:label "uncertainty"@en
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000019>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01024>
-
-    Annotations: 
-        rdfs:label "model role"@en
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000023>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
-
-    Annotations: 
-        rdfs:label "model component role"@en
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000023>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
-
-    Annotations: 
-        rdfs:label "location of uncertainty role"@en
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000023>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01027>
-
-    Annotations: 
-        rdfs:label "information content entity (ERSETZEN)"@en
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
-
-    Annotations: 
-        rdfs:label "data item (ERSETZEN)"@en
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01027>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01029>
-
-    Annotations: 
-        rdfs:label "model input data"@en
-    
-    EquivalentTo: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01056>
-         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01057>)
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01030>
-
-    Annotations: 
-        rdfs:label "processed modell output data"@en
-    
-    EquivalentTo: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01056>
-         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01058>)
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01031>
-
-    Annotations: 
-        rdfs:label "endogenous modelling parameter"@en
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01032>
-
-    Annotations: 
-        rdfs:label "exogenous modelling parameter"@en
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01033>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A system boundary is a generically dependent continuant that represents the demarcation of aspects of the real world system that are included in the model from those that are not included.",
-        <http://purl.obolibrary.org/obo/IAO_0000600> "The system boundary is often determined by the problem to be solved by the model and the chosen framing. It is also sometimes referred to as 'context' or seen as part of the 'conceptual model'.",
-        rdfs:label "model system boundary"@en
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01034>
-
-    Annotations: 
-        rdfs:label "model implementation"@en
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01035>
-
-    Annotations: 
-        rdfs:label "model structure"@en
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01036>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A conceptual model is a generically dependent continuant that specifies variables and relationships inside the system boundaries to represent a system in a simplified way. It has the model role.",
-        <http://purl.obolibrary.org/obo/IAO_0000600> "The conceptual model can provide the interpretation of a computer model based on the conceptual model.",
-        rdfs:label "conceptual model"@en
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01024>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01037>
-
-    Annotations: 
-        rdfs:label "computer model"@en
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01024>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01038>
-
-    Annotations: 
-        rdfs:label "model component"@en
-    
-    EquivalentTo: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>
-         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01025>)
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01047> some <http://openenergy-platform.org/ontology/oeo/MUNO_01001>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01039>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Epistemic uncertainty is an uncertainty about a system that exists due to imperfection of knowledge about the system. More knowledge about the system results in less epistemic uncertainty.",
-        <http://purl.obolibrary.org/obo/IAO_0000118> "epistemological uncertainty",
-        rdfs:label "epistemic uncertainty"@de
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01040>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Aleatory uncertainty is an uncertainty of a system that exists due to an inherent variability within the system. It is caused by e.g. randomness by nature, human, social or cultural bahaviour or technological surprises.",
-        <http://purl.obolibrary.org/obo/IAO_0000118> "ontic uncertainty",
-        <http://purl.obolibrary.org/obo/IAO_0000118> "ontological uncertainty",
-        rdfs:label "aleatory uncertianty"@de
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01041>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Ambiguous uncertainty is an uncertainty of a system due to the presence of various frames of reference about a phenomenon related to the system. It is caused by e.g. due to different perceptions, interpretations or values of stakeholders.",
-        rdfs:label "ambiguous uncertainty"@de
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01002>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01042>
-
-    Annotations: 
-        rdfs:label "system (ERSETZEN)"@de
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000040>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Level of model uncertainty is a quality of a model that represents the degree or severity of an uncertainty.",
-        rdfs:label "level of uncertainty"@de
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000019>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01049>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Shallow uncertainty is a level of uncertainty that allows to enumerate multiple alternatives and provide probabilities (subjective or objective).",
-        rdfs:label "shallow uncertainty"@de
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01050>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Medium uncertainty is a level of uncertainty that allows to enumerate multiple alternatives and rank order the alternatives in terms of perceived likelihood, without being able to number the likelihood.",
-        rdfs:label "medium uncertainty"@de
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01051>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Deep uncertainty is a level of uncertainty that allows to enumerate multiple alternatives without being able to rank order the alternatives in terms of how likely or plausible they are judged to be.",
-        rdfs:label "deep uncertainty"@de
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01052>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Recognized ignorance is a level of uncertainty that is so severe that one is unable to enumerate multiple alternatives, while admitting the possibility of being surprised.",
-        rdfs:label "recognized ignorance"@de
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01048>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01054>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A model uncertainty location is a generically dependent continuant that has the role to be a location of uncertainty.",
-        rdfs:label "location of uncertainty"@de
-    
-    EquivalentTo: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>
-         and (<http://openenergy-platform.org/ontology/oeo/MUNO_01023> some <http://openenergy-platform.org/ontology/oeo/MUNO_01026>)
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000002>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01056>
-
-    Annotations: 
-        rdfs:label "data set (ERSETZEN)"@de
-    
-    SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01028>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01057>
-
-    Annotations: 
-        rdfs:label "input data role"@de
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000023>
-    
-    
-Class: <http://openenergy-platform.org/ontology/oeo/MUNO_01058>
-
-    Annotations: 
-        rdfs:label "output data role"@de
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000023>
-    
-    
 Class: <http://purl.obolibrary.org/obo/BFO_0000002>
+
+    
+Class: <http://purl.obolibrary.org/obo/BFO_0000015>
 
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000019>
@@ -469,4 +136,341 @@ Class: <http://purl.obolibrary.org/obo/BFO_0000031>
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000040>
 
+    
+Class: <http://purl.obolibrary.org/obo/IAO_0000027>
+
+    
+Class: <http://purl.obolibrary.org/obo/IAO_0000030>
+
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>
+    
+    
+Class: <http://purl.obolibrary.org/obo/IAO_0000100>
+
+    
+Class: <http://purl.obolibrary.org/obo/RO_0002577>
+
+    
+Class: MUNO_01001
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model is a generically  dependent continuant for representing (knowledge about) a system and its behaviours in a simplified or idealised way. It has the model role.",
+        rdfs:label "model"@en
+    
+    EquivalentTo: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>
+         and (<http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01024)
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>,
+        MUNO_01043 some <http://purl.obolibrary.org/obo/RO_0002577>
+    
+    
+Class: MUNO_01002
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Uncertainty is a quality of a model of a system or of the model’s calculation’s output data that expresses any departure from the ideal of representing complete definite knowledge about the system. Definite knowledge of a system implies that one can predict its behaviour accurately under all circumstances for those aspects that are within the scope of the model.",
+        rdfs:label "uncertainty"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000019>,
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01001,
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01054
+    
+    
+Class: MUNO_01024
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model role is a a role of a generically  dependent continuant for representing (knowledge about) a system and its behaviours in a simplified or idealised way.",
+        rdfs:label "model role"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000023>,
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01001
+    
+    
+Class: MUNO_01025
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model component role is the role of a generically dependent continuant that is part of a model.",
+        rdfs:label "model component role"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000023>,
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01038
+    
+    
+Class: MUNO_01026
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Location of uncertainty role is a role of an entity in which a model uncertainty is located in.",
+        rdfs:label "location of uncertainty role"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000023>,
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01054
+    
+    
+Class: MUNO_01029
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Input data is a data set that is used as input data in a model calculation. It has the input data role.",
+        rdfs:label "input data"@en
+    
+    EquivalentTo: 
+        <http://purl.obolibrary.org/obo/IAO_0000100>
+         and (<http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01057)
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026,
+        <http://purl.obolibrary.org/obo/RO_0002352> some MUNO_01059
+    
+    
+Class: MUNO_01030
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Output data is a data set that is the output result of a model calculation. It has the output data role.",
+        rdfs:label "output data"@en
+    
+    EquivalentTo: 
+        <http://purl.obolibrary.org/obo/IAO_0000100>
+         and (<http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01058)
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026,
+        <http://purl.obolibrary.org/obo/RO_0002353> some MUNO_01059
+    
+    
+Class: MUNO_01031
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An endogenous modelling parameter is a data item that is a fixed parameter inside a computer model.",
+        rdfs:label "endogenous modelling parameter"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/IAO_0000027>,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026
+    
+    
+Class: MUNO_01032
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An exogenous modelling parameter is a data item that is used as input to the model but is defined outside the model (exogenous) and can be changed to reflect different external developments.",
+        rdfs:label "exogenous modelling parameter"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/IAO_0000027>,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026
+    
+    
+Class: MUNO_01033
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model scope is a generically dependent continuant that represents the demarcation of aspects of the real world system that are included in the model from those that are not included.",
+        <http://purl.obolibrary.org/obo/IAO_0000118> "model system boundary"@en,
+        <http://purl.obolibrary.org/obo/IAO_0000600> "The model scope is often determined by the problem to be solved by the model and the chosen framing. It is also sometimes referred to as 'system boundary' or 'context' or seen as part of the 'conceptual model'.",
+        rdfs:label "model scope"
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026
+    
+    
+Class: MUNO_01034
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A technical model implementation is a generically dependent continuant that is the part of a computer model that refers to the applied hardware and software.",
+        rdfs:label "technical model implementation"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025
+    
+    
+Class: MUNO_01035
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "The model structure is a generically dependent continuant that is part of a computer model and represents generic design choices of the algorithms.",
+        rdfs:label "model structure"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026
+    
+    
+Class: MUNO_01036
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A conceptual model is a generically dependent continuant that specifies variables and relationships inside the system boundaries to represent a system in a simplified way. It has the model role.",
+        <http://purl.obolibrary.org/obo/IAO_0000600> "The conceptual model can provide the interpretation of a computer model based on the conceptual model.",
+        rdfs:label "conceptual model"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01024,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026
+    
+    
+Class: MUNO_01037
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A computer model is a generically dependent continuant that is the implementation of a conceptual model in computer code. It has the model role.",
+        rdfs:label "computer model"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01024
+    
+    
+Class: MUNO_01038
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model component is a generically dependent continuant that is part of a computer model. It has the model component role.",
+        rdfs:label "model component"@en
+    
+    EquivalentTo: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>
+         and (<http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025)
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some MUNO_01001
+    
+    
+Class: MUNO_01039
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Epistemic uncertainty is an uncertainty of a model of a system that exists due to incomplete knowledge or incorrect beliefs about the system.",
+        <http://purl.obolibrary.org/obo/IAO_0000118> "epistemological uncertainty",
+        rdfs:label "epistemic uncertainty"@en
+    
+    SubClassOf: 
+        MUNO_01002
+    
+    
+Class: MUNO_01040
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Aleatory uncertainty is an uncertainty of a model of a system that exists due to an inherent variability within the system. It is caused by e.g. randomness by nature, human, social or cultural behaviour or technological surprises.",
+        <http://purl.obolibrary.org/obo/IAO_0000118> "ontic uncertainty",
+        <http://purl.obolibrary.org/obo/IAO_0000118> "ontological uncertainty",
+        rdfs:label "aleatory uncertianty"@en
+    
+    SubClassOf: 
+        MUNO_01002
+    
+    
+Class: MUNO_01041
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Ambiguous uncertainty is an uncertainty of a model of a system due to the presence of various frames of reference about a phenomenon related to the system. It is caused by e.g. due to different perceptions, interpretations or values of stakeholders.",
+        rdfs:label "ambiguous uncertainty"@en
+    
+    SubClassOf: 
+        MUNO_01002
+    
+    
+Class: MUNO_01048
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Level of model uncertainty is a quality of a model that represents the degree or severity of an uncertainty.",
+        rdfs:label "level of uncertainty"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000019>,
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01001,
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01054
+    
+    
+Class: MUNO_01049
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Shallow uncertainty is a level of uncertainty that allows to enumerate multiple alternatives and provide probabilities (subjective or objective).",
+        rdfs:label "shallow uncertainty"@en
+    
+    SubClassOf: 
+        MUNO_01048
+    
+    
+Class: MUNO_01050
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Medium uncertainty is a level of uncertainty that allows to enumerate multiple alternatives and rank order the alternatives in terms of perceived likelihood, without being able to number the likelihood.",
+        rdfs:label "medium uncertainty"@en
+    
+    SubClassOf: 
+        MUNO_01048
+    
+    
+Class: MUNO_01051
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Deep uncertainty is a level of uncertainty that allows to enumerate multiple alternatives without being able to rank order the alternatives in terms of how likely or plausible they are judged to be.",
+        rdfs:label "deep uncertainty"@en
+    
+    SubClassOf: 
+        MUNO_01048
+    
+    
+Class: MUNO_01052
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Recognized ignorance is a level of uncertainty that is so severe that one is unable to enumerate multiple alternatives, while admitting the possibility of being surprised.",
+        rdfs:label "recognized ignorance"@en
+    
+    SubClassOf: 
+        MUNO_01048
+    
+    
+Class: MUNO_01054
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model uncertainty location is a generically dependent continuant that has the role to be a location of uncertainty.",
+        rdfs:label "location of uncertainty"@en
+    
+    EquivalentTo: 
+        <http://purl.obolibrary.org/obo/BFO_0000031>
+         and (<http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026)
+    
+    
+Class: MUNO_01057
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Input data role is the role of a data set that is used as input to a model calculation.",
+        rdfs:label "input data role"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000023>,
+        <http://purl.obolibrary.org/obo/RO_0000052> some <http://purl.obolibrary.org/obo/IAO_0000100>
+    
+    
+Class: MUNO_01058
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Output data role is the role of a data set that is the output result of a model calculation.",
+        rdfs:label "output data role"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000023>,
+        <http://purl.obolibrary.org/obo/RO_0000052> some <http://purl.obolibrary.org/obo/IAO_0000030>
+    
+    
+Class: MUNO_01059
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model calculation is a process of solving mathematical equations of a model.",
+        rdfs:label "model calculation"@en
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000015>,
+        <http://purl.obolibrary.org/obo/RO_0000057> some MUNO_01037,
+        <http://purl.obolibrary.org/obo/RO_0002233> some MUNO_01029,
+        <http://purl.obolibrary.org/obo/RO_0002234> some MUNO_01030
+    
     

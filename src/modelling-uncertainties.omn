@@ -50,7 +50,7 @@ ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000052>
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000057>
 
     
-ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000087>
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000053>
 
     
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002233>
@@ -160,7 +160,7 @@ Class: MUNO_01001
     
     EquivalentTo: 
         <http://purl.obolibrary.org/obo/BFO_0000031>
-         and (<http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01024)
+         and (<http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01024)
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
@@ -220,10 +220,10 @@ Class: MUNO_01029
     
     EquivalentTo: 
         <http://purl.obolibrary.org/obo/IAO_0000100>
-         and (<http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01057)
+         and (<http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01057)
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01026,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026,
         <http://purl.obolibrary.org/obo/RO_0002352> some MUNO_01059
     
     
@@ -235,10 +235,10 @@ Class: MUNO_01030
     
     EquivalentTo: 
         <http://purl.obolibrary.org/obo/IAO_0000100>
-         and (<http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01058)
+         and (<http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01058)
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01026,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026,
         <http://purl.obolibrary.org/obo/RO_0002353> some MUNO_01059
     
     
@@ -250,8 +250,8 @@ Class: MUNO_01031
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/IAO_0000027>,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01025,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01026
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026
     
     
 Class: MUNO_01032
@@ -262,8 +262,8 @@ Class: MUNO_01032
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/IAO_0000027>,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01025,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01026
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026
     
     
 Class: MUNO_01033
@@ -276,8 +276,8 @@ Class: MUNO_01033
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01025,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01026
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026
     
     
 Class: MUNO_01034
@@ -288,7 +288,7 @@ Class: MUNO_01034
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01025
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025
     
     
 Class: MUNO_01035
@@ -299,8 +299,8 @@ Class: MUNO_01035
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01025,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01026
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026
     
     
 Class: MUNO_01036
@@ -312,9 +312,9 @@ Class: MUNO_01036
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01024,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01025,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01026
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01024,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025,
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026
     
     
 Class: MUNO_01037
@@ -325,7 +325,7 @@ Class: MUNO_01037
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01024
+        <http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01024
     
     
 Class: MUNO_01038
@@ -336,7 +336,7 @@ Class: MUNO_01038
     
     EquivalentTo: 
         <http://purl.obolibrary.org/obo/BFO_0000031>
-         and (<http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01025)
+         and (<http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01025)
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
@@ -436,7 +436,7 @@ Class: MUNO_01054
     
     EquivalentTo: 
         <http://purl.obolibrary.org/obo/BFO_0000031>
-         and (<http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01026)
+         and (<http://purl.obolibrary.org/obo/RO_0000053> some MUNO_01026)
     
     
 Class: MUNO_01057

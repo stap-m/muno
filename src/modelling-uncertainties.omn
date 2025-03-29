@@ -44,7 +44,7 @@ Datatype: xsd:string
 ObjectProperty: MUNO_01043
 
     Annotations: 
-        rdfs:label "models"@de
+        rdfs:label "models"@en
     
     SubPropertyOf: 
         owl:topObjectProperty
@@ -59,7 +59,7 @@ ObjectProperty: MUNO_01043
 ObjectProperty: MUNO_01045
 
     Annotations: 
-        rdfs:label "has uncertainty location"@de
+        rdfs:label "has uncertainty location"@en
     
     SubPropertyOf: 
         owl:topObjectProperty
@@ -74,7 +74,7 @@ ObjectProperty: MUNO_01045
 ObjectProperty: MUNO_01046
 
     Annotations: 
-        rdfs:label "has uncertainty level"@de
+        rdfs:label "has uncertainty level"@en
     
     SubPropertyOf: 
         owl:topObjectProperty
@@ -108,7 +108,7 @@ DataProperty: MUNO_01053
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A data property to indicate a probability value in [0,1] to a shallow level of uncertainty.",
-        rdfs:label "has shallow uncertainty value"@de
+        rdfs:label "has shallow uncertainty value"@en
     
     Domain: 
         MUNO_01049
@@ -300,7 +300,7 @@ Class: MUNO_01039
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Epistemic uncertainty is an uncertainty of a model of a system that exists due to incomplete knowledge or incorrect beliefs about the system.",
         <http://purl.obolibrary.org/obo/IAO_0000118> "epistemological uncertainty",
-        rdfs:label "epistemic uncertainty"@de
+        rdfs:label "epistemic uncertainty"@en
     
     SubClassOf: 
         MUNO_01002
@@ -312,7 +312,7 @@ Class: MUNO_01040
         <http://purl.obolibrary.org/obo/IAO_0000115> "Aleatory uncertainty is an uncertainty of a model of a system that exists due to an inherent variability within the system. It is caused by e.g. randomness by nature, human, social or cultural behaviour or technological surprises.",
         <http://purl.obolibrary.org/obo/IAO_0000118> "ontic uncertainty",
         <http://purl.obolibrary.org/obo/IAO_0000118> "ontological uncertainty",
-        rdfs:label "aleatory uncertianty"@de
+        rdfs:label "aleatory uncertianty"@en
     
     SubClassOf: 
         MUNO_01002
@@ -322,7 +322,7 @@ Class: MUNO_01041
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Ambiguous uncertainty is an uncertainty of a model of a system due to the presence of various frames of reference about a phenomenon related to the system. It is caused by e.g. due to different perceptions, interpretations or values of stakeholders.",
-        rdfs:label "ambiguous uncertainty"@de
+        rdfs:label "ambiguous uncertainty"@en
     
     SubClassOf: 
         MUNO_01002
@@ -332,7 +332,7 @@ Class: MUNO_01048
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Level of model uncertainty is a quality of a model that represents the degree or severity of an uncertainty.",
-        rdfs:label "level of uncertainty"@de
+        rdfs:label "level of uncertainty"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000019>
@@ -342,7 +342,7 @@ Class: MUNO_01049
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Shallow uncertainty is a level of uncertainty that allows to enumerate multiple alternatives and provide probabilities (subjective or objective).",
-        rdfs:label "shallow uncertainty"@de
+        rdfs:label "shallow uncertainty"@en
     
     SubClassOf: 
         MUNO_01048
@@ -352,7 +352,7 @@ Class: MUNO_01050
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Medium uncertainty is a level of uncertainty that allows to enumerate multiple alternatives and rank order the alternatives in terms of perceived likelihood, without being able to number the likelihood.",
-        rdfs:label "medium uncertainty"@de
+        rdfs:label "medium uncertainty"@en
     
     SubClassOf: 
         MUNO_01048
@@ -362,7 +362,7 @@ Class: MUNO_01051
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Deep uncertainty is a level of uncertainty that allows to enumerate multiple alternatives without being able to rank order the alternatives in terms of how likely or plausible they are judged to be.",
-        rdfs:label "deep uncertainty"@de
+        rdfs:label "deep uncertainty"@en
     
     SubClassOf: 
         MUNO_01048
@@ -372,7 +372,7 @@ Class: MUNO_01052
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Recognized ignorance is a level of uncertainty that is so severe that one is unable to enumerate multiple alternatives, while admitting the possibility of being surprised.",
-        rdfs:label "recognized ignorance"@de
+        rdfs:label "recognized ignorance"@en
     
     SubClassOf: 
         MUNO_01048
@@ -382,7 +382,7 @@ Class: MUNO_01054
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A model uncertainty location is a generically dependent continuant that has the role to be a location of uncertainty.",
-        rdfs:label "location of uncertainty"@de
+        rdfs:label "location of uncertainty"@en
     
     EquivalentTo: 
         <http://purl.obolibrary.org/obo/BFO_0000031>
@@ -392,7 +392,7 @@ Class: MUNO_01054
 Class: MUNO_01057
 
     Annotations: 
-        rdfs:label "input data role"@de
+        rdfs:label "input data role"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000023>
@@ -401,7 +401,7 @@ Class: MUNO_01057
 Class: MUNO_01058
 
     Annotations: 
-        rdfs:label "output data role"@de
+        rdfs:label "output data role"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000023>
@@ -410,7 +410,7 @@ Class: MUNO_01058
 Class: MUNO_01059
 
     Annotations: 
-        rdfs:label "model calculation"@de
+        rdfs:label "model calculation"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000015>,

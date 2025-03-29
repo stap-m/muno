@@ -41,36 +41,6 @@ Datatype: xsd:float
 Datatype: xsd:string
 
     
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01063>
-
-    Annotations: 
-        rdfs:label "quality of a gdc"@de
-    
-    SubPropertyOf: 
-        <http://purl.obolibrary.org/obo/RO_0000052>
-    
-    Domain: 
-        <http://purl.obolibrary.org/obo/BFO_0000019>
-    
-    Range: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>
-    
-    
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/MUNO_01064>
-
-    Annotations: 
-        rdfs:label "role of a gdc"@de
-    
-    SubPropertyOf: 
-        <http://purl.obolibrary.org/obo/RO_0000052>
-    
-    Domain: 
-        <http://purl.obolibrary.org/obo/BFO_0000023>
-    
-    Range: 
-        <http://purl.obolibrary.org/obo/BFO_0000031>
-    
-    
 ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000050>
 
     
@@ -89,9 +59,16 @@ ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002233>
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002234>
 
     
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002352>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002353>
+
+    
 ObjectProperty: MUNO_01043
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a model and a system where the model represents the system and its behaviours in a simplified or idealised way.",
         rdfs:label "models"@en
     
     SubPropertyOf: 
@@ -104,24 +81,10 @@ ObjectProperty: MUNO_01043
         <http://purl.obolibrary.org/obo/RO_0002577>
     
     
-ObjectProperty: MUNO_01045
-
-    Annotations: 
-        rdfs:label "has uncertainty location"@en
-    
-    SubPropertyOf: 
-        owl:topObjectProperty
-    
-    Domain: 
-        MUNO_01002
-    
-    Range: 
-        MUNO_01054
-    
-    
 ObjectProperty: MUNO_01046
 
     Annotations: 
+        rdfs:comment "A relation between a (type of) uncertainty and a level of uncertainty where the level indicates the severity of the uncertainty.",
         rdfs:label "has uncertainty level"@en
     
     SubPropertyOf: 
@@ -192,6 +155,7 @@ Class: <http://purl.obolibrary.org/obo/RO_0002577>
 Class: MUNO_01001
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model is a generically  dependent continuant for representing (knowledge about) a system and its behaviours in a simplified or idealised way. It has the model role.",
         rdfs:label "model"@en
     
     EquivalentTo: 
@@ -211,43 +175,47 @@ Class: MUNO_01002
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000019>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01063> some MUNO_01001,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01063> some MUNO_01054
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01001,
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01054
     
     
 Class: MUNO_01024
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model role is a a role of a generically  dependent continuant for representing (knowledge about) a system and its behaviours in a simplified or idealised way.",
         rdfs:label "model role"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000023>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01064> some MUNO_01001
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01001
     
     
 Class: MUNO_01025
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model component role is the role of a generically dependent continuant that is part of a model.",
         rdfs:label "model component role"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000023>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01064> some MUNO_01038
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01038
     
     
 Class: MUNO_01026
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Location of uncertainty role is a role of an entity in which a model uncertainty is located in.",
         rdfs:label "location of uncertainty role"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000023>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01064> some MUNO_01054
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01054
     
     
 Class: MUNO_01029
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Input data is a data set that is used as input data in a model calculation. It has the input data role.",
         rdfs:label "input data"@en
     
     EquivalentTo: 
@@ -255,12 +223,14 @@ Class: MUNO_01029
          and (<http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01057)
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01026
+        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01026,
+        <http://purl.obolibrary.org/obo/RO_0002352> some MUNO_01059
     
     
 Class: MUNO_01030
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Output data is a data set that is the output result of a model calculation. It has the output data role.",
         rdfs:label "output data"@en
     
     EquivalentTo: 
@@ -268,12 +238,14 @@ Class: MUNO_01030
          and (<http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01058)
     
     SubClassOf: 
-        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01026
+        <http://purl.obolibrary.org/obo/RO_0000087> some MUNO_01026,
+        <http://purl.obolibrary.org/obo/RO_0002353> some MUNO_01059
     
     
 Class: MUNO_01031
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An endogenous modelling parameter is a data item that is a fixed parameter inside a computer model.",
         rdfs:label "endogenous modelling parameter"@en
     
     SubClassOf: 
@@ -285,6 +257,7 @@ Class: MUNO_01031
 Class: MUNO_01032
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An exogenous modelling parameter is a data item that is used as input to the model but is defined outside the model (exogenous) and can be changed to reflect different external developments.",
         rdfs:label "exogenous modelling parameter"@en
     
     SubClassOf: 
@@ -298,7 +271,7 @@ Class: MUNO_01033
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A model scope is a generically dependent continuant that represents the demarcation of aspects of the real world system that are included in the model from those that are not included.",
         <http://purl.obolibrary.org/obo/IAO_0000118> "model system boundary"@en,
-        <http://purl.obolibrary.org/obo/IAO_0000600> "The model scope is often determined by the problem to be solved by the model and the chosen framing. It is also sometimes referred to as 'context' or seen as part of the 'conceptual model'.",
+        <http://purl.obolibrary.org/obo/IAO_0000600> "The model scope is often determined by the problem to be solved by the model and the chosen framing. It is also sometimes referred to as 'system boundary' or 'context' or seen as part of the 'conceptual model'.",
         rdfs:label "model scope"
     
     SubClassOf: 
@@ -310,7 +283,8 @@ Class: MUNO_01033
 Class: MUNO_01034
 
     Annotations: 
-        rdfs:label "model implementation"@en
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A technical model implementation is a generically dependent continuant that is the part of a computer model that refers to the applied hardware and software.",
+        rdfs:label "technical model implementation"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000031>,
@@ -320,6 +294,7 @@ Class: MUNO_01034
 Class: MUNO_01035
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "The model structure is a generically dependent continuant that is part of a computer model and represents generic design choices of the algorithms.",
         rdfs:label "model structure"@en
     
     SubClassOf: 
@@ -345,6 +320,7 @@ Class: MUNO_01036
 Class: MUNO_01037
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A computer model is a generically dependent continuant that is the implementation of a conceptual model in computer code. It has the model role.",
         rdfs:label "computer model"@en
     
     SubClassOf: 
@@ -355,6 +331,7 @@ Class: MUNO_01037
 Class: MUNO_01038
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model component is a generically dependent continuant that is part of a computer model. It has the model component role.",
         rdfs:label "model component"@en
     
     EquivalentTo: 
@@ -407,8 +384,8 @@ Class: MUNO_01048
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000019>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01063> some MUNO_01001,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01063> some MUNO_01054
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01001,
+        <http://purl.obolibrary.org/obo/RO_0000052> some MUNO_01054
     
     
 Class: MUNO_01049
@@ -465,26 +442,29 @@ Class: MUNO_01054
 Class: MUNO_01057
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Input data role is the role of a data set that is used as input to a model calculation.",
         rdfs:label "input data role"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000023>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01064> some <http://purl.obolibrary.org/obo/IAO_0000030>
+        <http://purl.obolibrary.org/obo/RO_0000052> some <http://purl.obolibrary.org/obo/IAO_0000100>
     
     
 Class: MUNO_01058
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Output data role is the role of a data set that is the output result of a model calculation.",
         rdfs:label "output data role"@en
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000023>,
-        <http://openenergy-platform.org/ontology/oeo/MUNO_01064> some <http://purl.obolibrary.org/obo/IAO_0000030>
+        <http://purl.obolibrary.org/obo/RO_0000052> some <http://purl.obolibrary.org/obo/IAO_0000030>
     
     
 Class: MUNO_01059
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model calculation is a process of solving mathematical equations of a model.",
         rdfs:label "model calculation"@en
     
     SubClassOf: 

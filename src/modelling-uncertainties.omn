@@ -8,11 +8,11 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 
-Ontology: <https://raw.githubusercontent.com/stap-m/midlevel-energy-ontology/main/ontology/src/modelling-uncertainties.owl/>
+Ontology: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-45/>
 
+Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
 Import: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/>
 Import: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/>
-Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
 
 Annotations: 
     rdfs:comment "The Modelling Uncertainties Ontology (MUNO) is a BFO-based mid-level ontology for the annotation and description of modelling uncertainties in many domains. MUNO was built based on the uncertainty matrix by Walker et.al. (2003) and Kwakkel et.al. (2010)."

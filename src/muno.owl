@@ -132,7 +132,7 @@
         <Class IRI="MUNO_01059"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://openenergy-platform.org/ontology/oeo/MUNO_01065"/>
+        <ObjectProperty IRI="MUNO_01065"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -565,7 +565,7 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://openenergy-platform.org/ontology/oeo/MUNO_01065"/>
+        <ObjectProperty IRI="MUNO_01065"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -577,7 +577,7 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://openenergy-platform.org/ontology/oeo/MUNO_01065"/>
+        <ObjectProperty IRI="MUNO_01065"/>
         <Class IRI="MUNO_01048"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -589,7 +589,7 @@
         <Class IRI="MUNO_01002"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://openenergy-platform.org/ontology/oeo/MUNO_01065"/>
+        <ObjectProperty IRI="MUNO_01065"/>
         <Class IRI="MUNO_01002"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -609,7 +609,7 @@
         <ObjectIntersectionOf>
             <Class IRI="MUNO_01049"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://openenergy-platform.org/ontology/oeo/MUNO_01065"/>
+                <ObjectProperty IRI="MUNO_01065"/>
                 <Class IRI="MUNO_01039"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
@@ -628,12 +628,12 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://openenergy-platform.org/ontology/oeo/MUNO_01065</IRI>
+        <IRI>MUNO_01065</IRI>
         <Literal>A relation between a level of uncertainty and a (type of) uncertainty.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://openenergy-platform.org/ontology/oeo/MUNO_01065</IRI>
+        <IRI>MUNO_01065</IRI>
         <Literal xml:lang="de">uncertainty level of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>

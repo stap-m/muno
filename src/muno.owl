@@ -13,7 +13,7 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl</Import>
     <Import>http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/</Import>
     <Import>http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/</Import>
     <Annotation>
@@ -130,6 +130,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="MUNO_01059"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://openenergy-platform.org/ontology/oeo/MUNO_01065"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -562,6 +565,10 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://openenergy-platform.org/ontology/oeo/MUNO_01065"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="MUNO_01043"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -570,6 +577,10 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://openenergy-platform.org/ontology/oeo/MUNO_01065"/>
+        <Class IRI="MUNO_01048"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="MUNO_01043"/>
         <Class IRI="MUNO_01001"/>
     </ObjectPropertyDomain>
@@ -577,6 +588,10 @@
         <ObjectProperty IRI="MUNO_01046"/>
         <Class IRI="MUNO_01002"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://openenergy-platform.org/ontology/oeo/MUNO_01065"/>
+        <Class IRI="MUNO_01002"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="MUNO_01043"/>
         <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
@@ -591,7 +606,13 @@
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="MUNO_01053"/>
-        <Class IRI="MUNO_01049"/>
+        <ObjectIntersectionOf>
+            <Class IRI="MUNO_01049"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://openenergy-platform.org/ontology/oeo/MUNO_01065"/>
+                <Class IRI="MUNO_01039"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="MUNO_01053"/>
@@ -605,6 +626,16 @@
             </FacetRestriction>
         </DatatypeRestriction>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://openenergy-platform.org/ontology/oeo/MUNO_01065</IRI>
+        <Literal>A relation between a level of uncertainty and a (type of) uncertainty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://openenergy-platform.org/ontology/oeo/MUNO_01065</IRI>
+        <Literal xml:lang="de">uncertainty level of</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>MUNO_01001</IRI>
@@ -628,7 +659,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>MUNO_01024</IRI>
-        <Literal>A model role is a a role of a generically  dependent continuant for representing (knowledge about) a system and its behaviours in a simplified or idealised way.</Literal>
+        <Literal>A model role is a role of a generically  dependent continuant for representing (knowledge about) a system and its behaviours in a simplified or idealised way.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -888,7 +919,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>MUNO_01053</IRI>
-        <Literal>A data property to indicate a probability value in [0,1] to a shallow level of uncertainty.</Literal>
+        <Literal>A data property to indicate the uncertainty value in [0,1] to a shallow epistemic uncertainty. A value of 0 indicate no uncertainty, i.e. 100% probability. A value of 1 indicates full uncertainty, i.e. 0% probability.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

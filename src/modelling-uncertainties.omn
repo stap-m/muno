@@ -19,6 +19,7 @@ Annotations:
     dc:contributor "Mirjam Stappel",
     dc:contributor "Till Mossakowski",
     <http://purl.org/dc/terms/license> "Creative Commons Attribution 4.0 International (CC-BY-4.0)",
+    <http://purl.org/dc/terms/title> "Modelling Uncertainties Ontology",
     rdfs:comment "The Modelling Uncertainties Ontology (MUNO) is a BFO-based mid-level ontology for the annotation and description of modelling uncertainties in many domains. MUNO was built based on the uncertainty matrix by Walker et.al. (2003) and Kwakkel et.al. (2010)."
 
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
@@ -31,6 +32,9 @@ AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000600>
 
     
 AnnotationProperty: <http://purl.org/dc/terms/license>
+
+    
+AnnotationProperty: <http://purl.org/dc/terms/title>
 
     
 AnnotationProperty: dc:contributor

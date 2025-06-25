@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl"
+     xml:base="https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-45/"/>
+     ontologyIRI="https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/">
+    <Prefix name="" IRI="https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -31,6 +31,10 @@
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
         <Literal>Creative Commons Attribution 4.0 International (CC-BY-4.0)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>Modelling Uncertainties Ontology</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -197,6 +201,12 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

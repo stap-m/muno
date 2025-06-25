@@ -9,7 +9,7 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 Ontology: <https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/>
-
+<https://raw.githubusercontent.com/stap-m/muno/dev/src/muno.owl/>
 Import: <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl>
 Import: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/>
 Import: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/>

@@ -6,12 +6,12 @@
     <uri id="Imports Wizard Entry" name="http://openenergy-platform.org/ontology/oeo/dev/imports/iao-extracted.owl" uri="import/iao-extracted.owl"/>
     <uri id="Imports Wizard Entry" name="http://openenergy-platform.org/ontology/oeo/dev/imports/ro-extracted.owl" uri="import/ro-extracted.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1743342691626" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="import/bfo/bfo-extracted.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1743342691626" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="import/bfo/bfo-full-download.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1743342691626" name="http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-45/" uri="muno.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1743342691626" name="http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/ro-extracted.owl" uri="ro-extracted.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1743342691626" name="http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/iao-extracted.owl" uri="iao-extracted.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1743342691626" name="shadowed:http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/ro-extracted.owl" uri="import/ro-extracted.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1743342691626" name="shadowed:http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/iao-extracted.owl" uri="import/iao-extracted.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746808705719" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="import/bfo/bfo-extracted.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746808705719" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="import/bfo/bfo-full-download.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746808705719" name="http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-45/" uri="muno.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746808705719" name="http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/ro-extracted.owl" uri="ro-extracted.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746808705719" name="http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/iao-extracted.owl" uri="iao-extracted.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746808705719" name="shadowed:http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/ro-extracted.owl" uri="import/ro-extracted.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746808705719" name="shadowed:http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/iao-extracted.owl" uri="import/iao-extracted.owl"/>
     </group>
 </catalog>

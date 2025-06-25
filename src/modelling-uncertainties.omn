@@ -1,4 +1,4 @@
-Prefix: : <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-45/>
+Prefix: : <https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -8,13 +8,18 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 
-Ontology: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-45/>
-
-Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
+Ontology: <https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/>
+<https://raw.githubusercontent.com/stap-m/muno/dev/src/muno.owl/>
+Import: <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl>
 Import: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/>
 Import: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/>
 
 Annotations: 
+    dc:contributor "Fabian Neuhaus",
+    dc:contributor "Mirjam Stappel",
+    dc:contributor "Till Mossakowski",
+    <http://purl.org/dc/terms/license> "Creative Commons Attribution 4.0 International (CC-BY-4.0)",
+    <http://purl.org/dc/terms/title> "Modelling Uncertainties Ontology",
     rdfs:comment "The Modelling Uncertainties Ontology (MUNO) is a BFO-based mid-level ontology for the annotation and description of modelling uncertainties in many domains. MUNO was built based on the uncertainty matrix by Walker et.al. (2003) and Kwakkel et.al. (2010)."
 
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
@@ -24,6 +29,15 @@ AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000118>
 
     
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000600>
+
+    
+AnnotationProperty: <http://purl.org/dc/terms/license>
+
+    
+AnnotationProperty: <http://purl.org/dc/terms/title>
+
+    
+AnnotationProperty: dc:contributor
 
     
 AnnotationProperty: rdfs:comment
@@ -47,10 +61,10 @@ ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000050>
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000052>
 
     
-ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000057>
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000053>
 
     
-ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000053>
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000057>
 
     
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002233>
@@ -97,17 +111,34 @@ ObjectProperty: MUNO_01046
         MUNO_01048
     
     
+ObjectProperty: MUNO_01065
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a level of uncertainty and a (type of) uncertainty.",
+        rdfs:label "uncertainty level of"@de
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    Domain: 
+        MUNO_01048
+    
+    Range: 
+        MUNO_01002
+    
+    
 ObjectProperty: owl:topObjectProperty
 
     
 DataProperty: MUNO_01053
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A data property to indicate a probability value in [0,1] to a shallow level of uncertainty.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A data property to indicate the uncertainty value in [0,1] to a shallow epistemic uncertainty. A value of 0 indicate no uncertainty, i.e. 100% probability. A value of 1 indicates full uncertainty, i.e. 0% probability.",
         rdfs:label "has shallow uncertainty value"@en
     
     Domain: 
         MUNO_01049
+         and (MUNO_01065 some MUNO_01039)
     
     Range: 
         xsd:float[>= 0.0f , <= 1.0f]
@@ -182,7 +213,7 @@ Class: MUNO_01002
 Class: MUNO_01024
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A model role is a a role of a generically  dependent continuant for representing (knowledge about) a system and its behaviours in a simplified or idealised way.",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A model role is a role of a generically  dependent continuant for representing (knowledge about) a system and its behaviours in a simplified or idealised way.",
         rdfs:label "model role"@en
     
     SubClassOf: 

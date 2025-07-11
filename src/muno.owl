@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/"
+     xml:base="https://purl.org/muno/ontology/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/"
+     ontologyIRI="https://purl.org/muno/ontology/"
      versionIRI="https://raw.githubusercontent.com/stap-m/muno/dev/src/muno.owl/">
     <Prefix name="" IRI="https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>

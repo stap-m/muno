@@ -15,7 +15,6 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl</Import>
-    <Import>http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/</Import>
     <Import>https://raw.githubusercontent.com/stap-m/muno/refs/heads/dev/src/iao-extracted.owl</Import>
     <Import>https://raw.githubusercontent.com/stap-m/muno/refs/heads/main/src/ro-extracted.owl</Import>
     <Annotation>

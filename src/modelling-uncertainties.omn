@@ -1,4 +1,4 @@
-Prefix: : <https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/>
+Prefix: : <https://purl.org/muno/ontology/>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -8,11 +8,11 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 
-Ontology: <https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/>
+Ontology: <https://purl.org/muno/ontology/>
 <https://raw.githubusercontent.com/stap-m/muno/dev/src/muno.owl/>
 Import: <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl>
-Import: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/>
-Import: <http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/>
+Import: <https://raw.githubusercontent.com/stap-m/muno/refs/heads/dev/src/iao-extracted.owl>
+Import: <https://raw.githubusercontent.com/stap-m/muno/refs/heads/main/src/ro-extracted.owl>
 
 Annotations: 
     dc:contributor "Fabian Neuhaus",

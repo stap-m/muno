@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/"
+     xml:base="https://purl.org/muno/ontology/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/"
+     ontologyIRI="https://purl.org/muno/ontology/"
      versionIRI="https://raw.githubusercontent.com/stap-m/muno/dev/src/muno.owl/">
-    <Prefix name="" IRI="https://raw.githubusercontent.com/stap-m/muno/main/src/muno.owl/"/>
+    <Prefix name="" IRI="https://purl.org/muno/ontology/"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -15,8 +15,8 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl</Import>
-    <Import>http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-46/</Import>
-    <Import>http://www.semanticweb.org/abc/ontologies/2025/2/untitled-ontology-47/</Import>
+    <Import>https://raw.githubusercontent.com/stap-m/muno/refs/heads/dev/src/iao-extracted.owl</Import>
+    <Import>https://raw.githubusercontent.com/stap-m/muno/refs/heads/main/src/ro-extracted.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
         <Literal>Fabian Neuhaus</Literal>
